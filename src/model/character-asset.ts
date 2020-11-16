@@ -4,12 +4,12 @@
 export default class CharacterClass {
   name: string;
   description: string;
+  traits: string[];
 
-  isUncommon: boolean;
-
-  constructor(name: string, description: string, isUncommon: boolean) {
+  constructor(name: string, desc: string, traits: stringp[]) {
     this.name = name;
-    this.description = description;
+    this.description = desc;
     this.isUncommon = isUncommon;
+    this.traits = traits;
   }
 }

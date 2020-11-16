@@ -1,12 +1,12 @@
-import Ability from './ability';
+import AbilityBoost from './ability-boost';
 import CharacterAsset from './character-asset';
 
 export default class Background extends CharacterAsset {
-  abilityBoosts: Ability[]
+  abilityBoosts: AbilityBoost[]
 
-  constructor(name: string, description: string, isUncommon: boolean,
-    abilityBoosts: Ability[]) {
-      super(name, description, isUncommon);
+  constructor(name: string, description: string, traits: string[],
+    abilityBoosts: AbilityBoost[]) {
+      super(name, description, traits);
       
     this.abilityBoosts = abilityBoosts;
   }
