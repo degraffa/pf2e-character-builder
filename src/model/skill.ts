@@ -1,3 +1,3 @@
-export default class SKill {
+export default class Skill {
   
 }
