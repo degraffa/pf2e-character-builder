@@ -19,7 +19,6 @@ export default class CharacterSelect extends React.Component<Props, State> {
 
     startNewChar() {
         this.setState({isComplete: true, isNewChar: true});
-        alert('new char');
     }
 
     startLoadChar() {
