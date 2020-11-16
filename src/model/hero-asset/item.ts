@@ -1,15 +1,16 @@
-import CharacterAsset from './character-asset';
+import HeroAsset from './hero-asset';
 
-export default class Item extends CharacterAsset {
+export default class Item extends HeroAsset {
   price: number;
   bulk: number;
   hands: number;
   usage: string;
   traits: string[];
 
-  constructor(name: string, desc: string, traits: string[], price: number, 
+  constructor(name: string, desc: string, source: string,
+    traits: string[], price: number, 
     bulk: number, hands: number, usage: string) {
-      super(name, desc, traits);
+      super(name, desc, source, traits);
 
       this.price = price;
       this.bulk = bulk;

@@ -17,12 +17,7 @@ declare enum SkillType {
   Survival,
   Thievery,
 
-  DecipherWriting,
-  EarnIncome,
-  IdentifyMagic,
-  LearnSpell,
-  RecallKnowledge,
-  Subsist
+  Perception
 }
 
 export default SkillType;

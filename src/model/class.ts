@@ -1,4 +1,4 @@
-import Feat from './char-asset/feat'
+import Feat from './hero-asset/feat'
 
 export default class Class {
 
