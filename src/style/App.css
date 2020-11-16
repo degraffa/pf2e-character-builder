@@ -6,7 +6,7 @@
   height: 40vmin;
   pointer-events: none;
 }
-
+ 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -15,7 +15,8 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  /* min-height: 100vh; */
+  height: 10%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -35,4 +36,14 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.buttons {
+  margin-top: 5%;
+}
+
+Button {
+  width: 25%;
+  margin-left: 5%;
+  margin-right: 5%;
 }
