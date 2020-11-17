@@ -1,4 +1,4 @@
-import Feat from './hero-asset/feat'
+import Feat from './hero-asset/feat/feat'
 import Item from './hero-asset/item'
 import Skill from './hero-asset/skill'
 import Spell from './hero-asset/spell'

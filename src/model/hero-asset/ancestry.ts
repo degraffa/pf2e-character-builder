@@ -1,34 +1,25 @@
 import HeroAsset from './hero-asset'
 import Size from '../enum/size'
-import Feat from './feat'
+import Feat from './feat/feat'
 import AbilityBoost from '../enum/ability-boost'
 import Heritage from './heritage'
 
 export default class Ancestry extends HeroAsset {
-  hp: number;
-  speed: number;
-  languages: string[];
-  vision: string;
-  size: Size;
-  abilityBoosts: AbilityBoost[];
-  abilityFlaws: AbilityBoost[];
-  ancestryFeats: Feat[];
-  heritages: Heritage[];
-
-  constructor(name: string, desc: string, source: string, traits: string[],
-    hp: number, speed: number, vision: string, langs: string[], 
-    size: Size, aBoosts: AbilityBoost[],
-    aFlaws: AbilityBoost[], aFeats: Feat[], heritages: Heritage[]) {
-      super(name, desc, source, traits);
-
-      this.hp = hp;
-      this.speed = speed;
-      this.size = size;
-      this.abilityBoosts = aBoosts;
-      this.abilityFlaws = aFlaws;
-      this.ancestryFeats = aFeats;
-      this.heritages = heritages;
-      this.languages = langs;
-      this.vision = vision;
-    }
+  constructor(
+    public name: string,
+    public desc: string,
+    public source: string,
+    public traits: string[],
+    public hp: number,
+    public speed: number,
+    public languages: string[],
+    public vision: string,
+    public  size: Size,
+    public abilityBoosts: AbilityBoost[],
+    public abilityFlaws: AbilityBoost[],
+    public ancestryFeats: Feat[],
+    public heritages: Heritage[],
+  ) {
+    super(name, desc, source, traits);
+  }
 }
