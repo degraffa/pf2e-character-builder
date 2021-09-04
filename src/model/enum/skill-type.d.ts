@@ -17,7 +17,11 @@ declare enum SkillType {
   Survival,
   Thievery,
 
-  Perception
+  Perception,
+
+  Fortitude,
+  Reflix,
+  Will
 }
 
 export default SkillType;

@@ -38,11 +38,8 @@
   }
 }
 
-.buttons {
+.hero-load-buttons {
   margin-top: 5%;
-}
-
-Button {
   width: 25%;
   margin-left: 5%;
   margin-right: 5%;

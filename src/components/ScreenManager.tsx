@@ -1,5 +1,5 @@
 import React from 'react';
-import Hero from '../model/hero'
+import Hero from '../model/hero/hero'
 import HeroSheet from './hero-sheet/HeroSheet';
 import HeroLoadScreen from './HeroLoad';
 
@@ -41,7 +41,7 @@ export default class ScreenManager extends React.Component<Props, State> {
     }
     else {
       return (
-        <HeroSheet />
+        <HeroSheet hero={this.state.hero}/>
       );
     }
     

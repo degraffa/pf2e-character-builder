@@ -1,4 +1,4 @@
-import AbilityBoost from '../enum/ability-boost';
+import AbilityBoost from '../../enum/ability-boost';
 import HeroAsset from './hero-asset';
 
 export default class Background extends HeroAsset {

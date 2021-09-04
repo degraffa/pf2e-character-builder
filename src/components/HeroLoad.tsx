@@ -7,9 +7,9 @@ interface State {}
 export default class HeroLoad extends React.Component<Props, State> {
     render() {
         return (
-            <div className="buttons">
-                <Button variant="primary" size="lg" onClick={this.props.loadNewHero}>New Character</Button>
-                <Button variant="secondary" size="lg" onClick={this.props.loadOldHero}>Load Character</Button>
+            <div>
+                <Button variant="primary" size="lg" onClick={this.props.loadNewHero} className="hero-load-buttons">New Character</Button>
+                <Button variant="secondary" size="lg" onClick={this.props.loadOldHero} className="hero-load-buttons">Load Character</Button>
             </div>
         );
     }

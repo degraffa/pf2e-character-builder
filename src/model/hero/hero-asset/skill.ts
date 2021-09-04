@@ -1,5 +1,5 @@
 import HeroAsset from './hero-asset';
-import SkillType from '../enum/skill-type';
+import SkillType from '../../enum/skill-type';
 
 export default class Skill extends HeroAsset {
   constructor(
