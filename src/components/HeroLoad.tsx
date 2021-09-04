@@ -4,7 +4,7 @@ import Button from 'react-bootstrap/Button'
 interface Props { loadNewHero: () => void; loadOldHero: () => void; }
 interface State {}
 
-export default class CharacterSelect extends React.Component<Props, State> {
+export default class HeroLoad extends React.Component<Props, State> {
     render() {
         return (
             <div className="buttons">

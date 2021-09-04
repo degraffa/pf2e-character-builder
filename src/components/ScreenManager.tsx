@@ -1,6 +1,7 @@
 import React from 'react';
 import Hero from '../model/hero'
-import CharacterSelect from './CharacterSelect';
+import HeroSheet from './hero-sheet/HeroSheet';
+import HeroLoadScreen from './HeroLoad';
 
 // Manages what gets displayed
 
@@ -32,7 +33,7 @@ export default class ScreenManager extends React.Component<Props, State> {
   render() {
     if (!this.state.isHeroSelected) {
       return (
-        <CharacterSelect 
+        <HeroLoadScreen 
           loadNewHero={() => this.loadNewHero()}
           loadOldHero={() => this.loadOldHero()}
           />
@@ -40,7 +41,7 @@ export default class ScreenManager extends React.Component<Props, State> {
     }
     else {
       return (
-        <div> </div>
+        <HeroSheet />
       );
     }
     
