@@ -1,4 +1,4 @@
-import Skill from "../hero-asset/skill";
+import Skill from "./skill";
 
 export default interface HeroSkills {
   acrobatics: Skill,

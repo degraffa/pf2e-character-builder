@@ -1,4 +1,5 @@
 import React from 'react';
+import HeroBank from '../model/bank/bank-hero';
 import Hero from '../model/hero/hero'
 import HeroSheet from './hero-sheet/HeroSheet';
 import HeroLoadScreen from './HeroLoad';
@@ -13,7 +14,7 @@ export default class ScreenManager extends React.Component<Props, State> {
     super(props);
 
     this.state = {
-      hero: new Hero(),
+      hero: new Hero(HeroBank.getDefaultHeroData()),
       isHeroSelected: false
     };
 

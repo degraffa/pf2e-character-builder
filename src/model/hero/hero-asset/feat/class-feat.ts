@@ -1,6 +1,6 @@
 import HeroClass from '../../../hero-class';
 import FeatType from '../../../enum/feat-type';
-import Skill from '../skill';
+import Skill from '../../hero-data/skill';
 import Feat from './feat';
 
 export default class ClassFeat extends Feat {

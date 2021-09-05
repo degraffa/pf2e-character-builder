@@ -1,5 +1,4 @@
 import HeroAsset from './hero-asset'
-import Size from '../../enum/size'
 import Feat from './feat/feat'
 import AbilityBoost from '../../enum/ability-boost'
 import Heritage from './heritage'
@@ -14,7 +13,7 @@ export default class Ancestry extends HeroAsset {
     public speed: number,
     public languages: string[],
     public vision: string,
-    public size: Size,
+    public size: string,
     public abilityBoosts: AbilityBoost[],
     public abilityFlaws: AbilityBoost[],
     public ancestryFeats: Feat[],

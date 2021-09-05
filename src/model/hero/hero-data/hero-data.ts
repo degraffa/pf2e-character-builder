@@ -18,12 +18,12 @@ export default interface HeroData {
   gender: string,
   deity: string,
   age: string,
-  Languages: string[],
-  Notes: string,
+  languages: string[],
+  notes: string,
   ac: number,
   hpMax: number,
   hpCurrent: number,
   equippedArmor: Item,
-  equippedWeapon: Item,
+  equippedItem: Item,
   inventory: Item[]
 }

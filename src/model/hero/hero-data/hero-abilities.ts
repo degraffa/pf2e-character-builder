@@ -1,10 +1,8 @@
-import Ability from "../../ability";
-
 export default interface HeroAbilities {
-  str: Ability,
-  dex: Ability,
-  con: Ability,
-  int: Ability,
-  wis: Ability,
-  cha: Ability
+  str: number,
+  dex: number,
+  con: number,
+  int: number,
+  wis: number,
+  cha: number
 }
