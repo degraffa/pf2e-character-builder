@@ -1,5 +1,5 @@
 import React from 'react'
-import Hero from '../../model/hero/hero';
+import Hero from '../../model/actor/hero/hero';
 
 interface Props {hero: Hero}
 interface State {}

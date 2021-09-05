@@ -1,16 +1,47 @@
-import HeroClass from "../hero-class";
-import Ancestry from "../hero/hero-asset/ancestry";
-import Background from "../hero/hero-asset/background";
-import HeroData from "../hero/hero-data/hero-data";
-import HeroAbilities from "../hero/hero-data/hero-abilities";
-import Skill from "../hero/hero-data/skill";
-import HeroSkills from "../hero/hero-data/hero-skills";
-import Item from "../hero/hero-asset/item";
+import HeroClass from "../actor/actor-asset/hero-asset/hero-class";
+import Ancestry from "../actor/actor-asset/hero-asset/ancestry";
+import Background from "../actor/actor-asset/hero-asset/background";
+import HeroData from "../actor/hero/hero-data";
+import HeroAbilities from "../actor/hero/hero-abilities";
+import Skill from "../actor/hero/skill";
+import HeroSkills from "../actor/hero/hero-skills";
+import Item from "../actor/actor-asset/item";
 
 export default class HeroBank {
-  private static defaultAncestry: Ancestry = new Ancestry("", "", "", [], 0, 0, [], "", "", [], [], [], []);
+  private static defaultAncestry: Ancestry = {
+    name: "",
+    description: "",
+    source: "",
+    traits: [],
+    hp: 0,
+    speed: 0,
+    langauges: [],
+    vision: "",
+    size: "",
+    abilityBoosts: [],
+    abilityFlaws: [],
+    ancestryFeats: [],
+    heritages: []
+  };
+
+  private static defaultItem: Item = {
+    name: "",
+    description: "",
+    source: "",
+    traits: [],
+    price: 0,
+    bulk: 0,
+    hands: 0,
+    usage: ""
+  };
   
-  private static defaultBackground: Background = new Background("", "",  "", [], []);
+  private static defaultBackground: Background = {
+    name: "",
+    description: "",
+    source: "",
+    traits: [],
+    abilityBoosts: []
+  };
   
   private static defaultAbilities: HeroAbilities = {
     str: 0,
@@ -52,11 +83,16 @@ export default class HeroBank {
     Will: HeroBank.defaultSkill
   }
 
-  private static defaultItem = new Item("", "", "", [], 0, 0, 0, "");
+  private static defaultHeroClass: HeroClass = {
+    name: "",
+    description: "",
+    source: "",
+    traits: []
+  };
 
   private static defaultHeroData: HeroData = {
     name: "",
-    heroClass: new HeroClass(),
+    heroClass: HeroBank.defaultHeroClass,
     ancestry: HeroBank.defaultAncestry,
     background: HeroBank.defaultBackground,
     abilities: HeroBank.defaultAbilities,

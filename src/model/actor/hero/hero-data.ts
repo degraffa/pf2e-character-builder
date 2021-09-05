@@ -1,8 +1,8 @@
-import HeroClass from "../../hero-class";
-import Ancestry from "../hero-asset/ancestry";
-import Background from "../hero-asset/background";
-import Item from "../hero-asset/item";
-import Spell from "../hero-asset/spell";
+import HeroClass from "../actor-asset/hero-asset/hero-class";
+import Ancestry from "../actor-asset/hero-asset/ancestry";
+import Background from "../actor-asset/hero-asset/background";
+import Item from "../actor-asset/item";
+import Spell from "../actor-asset/spell";
 import HeroAbilities from "./hero-abilities";
 import HeroSkills from "./hero-skills";
 
