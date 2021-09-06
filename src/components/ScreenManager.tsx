@@ -4,7 +4,7 @@ import Hero from '../model/actor/hero/hero'
 import HeroSheet from './hero-sheet/HeroSheet';
 import HeroLoadScreen from './HeroLoad';
 import HeroSheetSidebar from './hero-sheet/HeroSheetSidebar';
-import {BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom';
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
 // Manages what gets displayed
 
@@ -47,19 +47,10 @@ export default class ScreenManager extends React.Component<Props, State> {
     return (
       <Router>
         <div>
-          <nav>
-            <ul>
-              <li>
-                <Link to="/">Hero Load</Link>
-              </li>
-              <li>
-                <Link to="/hero-sheet-about">Hero Sheet About</Link>
-              </li>
-            </ul>
-          </nav>
+          <HeroSheetSidebar />
 
           <Switch>
-            <Route path="/hero-sheet-about">
+            <Route path="/overview">
               <HeroSheet hero={this.state.hero} />
             </Route>
             <Route path="/">
