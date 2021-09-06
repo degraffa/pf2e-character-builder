@@ -44,9 +44,12 @@ export default class HeroSheetSidebar extends React.Component<Props, State> {
         onSetOpen={this.onSetOpen}
         styles={{sidebar: {background: "white"}}}
       >
-        <button onClick={() => this.onSetOpen(true)} className="sidebar-button">
-          <img src={`${process.env.PUBLIC_URL}/assets/menu-bars.png`} alt="Open Sidebar" height="20"/>
-        </button>
+
+        <div className="sidebar-button"> 
+          <button onClick={() => this.onSetOpen(true)}>
+            <img src={`${process.env.PUBLIC_URL}/assets/menu-bars.png`} alt="Open Sidebar" className="sidebar-image"/>
+          </button>
+        </div>
       </Sidebar>
     )
   }

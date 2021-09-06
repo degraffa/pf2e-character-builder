@@ -6,6 +6,7 @@ import HeroSheetSidebar from './components/hero-sheet/HeroSheetSidebar';
 function App() {
   return (
     <div className="App">
+      
       <header className="App-header">
         <HeroSheetSidebar />
         <h1> Pathfinder 2e Character Builder </h1>
