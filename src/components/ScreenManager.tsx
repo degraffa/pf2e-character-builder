@@ -10,6 +10,8 @@ interface Props {};
 interface State {hero: Hero, isHeroSelected: boolean};
 
 export default class ScreenManager extends React.Component<Props, State> {
+  mainContent: JSX.Element;
+
   constructor(props: Props) {
     super(props);
 
@@ -17,6 +19,8 @@ export default class ScreenManager extends React.Component<Props, State> {
       hero: {data: HeroBank.getDefaultHeroData()},
       isHeroSelected: false
     };
+
+    this.mainContent = (<div></div>)
 
     this.loadNewHero = this.loadNewHero.bind(this);
   }
