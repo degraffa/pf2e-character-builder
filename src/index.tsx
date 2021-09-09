@@ -8,6 +8,7 @@ ReactDOM.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>,
+  // Add above app to the root element of index.html
   document.getElementById('root')
 ); 
 
