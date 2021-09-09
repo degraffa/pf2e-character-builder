@@ -5,6 +5,7 @@ import Item from "../actor-asset/item";
 import Spell from "../actor-asset/spell";
 import HeroAbilities from "./hero-abilities";
 import HeroSkills from "./hero-skills";
+import Inventory from "../intentory";
 
 export default interface HeroData {
   name: string,
@@ -22,8 +23,5 @@ export default interface HeroData {
   notes: string,
   ac: number,
   hpMax: number,
-  hpCurrent: number,
-  equippedArmor: Item,
-  equippedItem: Item,
-  inventory: Item[]
+  inventory: Inventory
 }

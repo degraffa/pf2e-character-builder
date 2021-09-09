@@ -4,7 +4,7 @@ import Hero from '../../model/actor/hero/hero';
 interface Props {hero: Hero}
 interface State {}
 
-export default class HeroSheet extends React.Component<Props, State> {
+export default class HeroSheetOverview extends React.Component<Props, State> {
   hero: Hero;
 
   constructor(props: Props) {

@@ -1,4 +1,4 @@
-import ActorAsset from '../hero-asset'
+import ActorAsset from '../actor-asset'
 import Feat from '../feat'
 import AbilityBoost from '../../../enum/ability-boost'
 import Heritage from './heritage'

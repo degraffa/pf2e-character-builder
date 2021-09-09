@@ -1,4 +1,4 @@
-import ActorAsset from './hero-asset';
+import ActorAsset from './actor-asset';
 
 export default interface Item extends ActorAsset {
   price: number,

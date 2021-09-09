@@ -1,7 +1,7 @@
 import React from 'react';
 import HeroBank from '../model/bank/bank-hero';
 import Hero from '../model/actor/hero/hero'
-import HeroSheet from './hero-sheet/HeroSheet';
+import HeroSheetOverview from './hero-sheet/HeroSheet';
 import HeroLoadScreen from './HeroLoad';
 import HeroSheetSidebar from './hero-sheet/HeroSheetSidebar';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
@@ -51,7 +51,7 @@ export default class ScreenManager extends React.Component<Props, State> {
 
           <Switch>
             <Route path="/overview">
-              <HeroSheet hero={this.state.hero} />
+              <HeroSheetOverview hero={this.state.hero} />
             </Route>
             <Route path="/">
               <HeroLoadScreen

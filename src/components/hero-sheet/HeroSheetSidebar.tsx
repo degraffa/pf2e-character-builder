@@ -10,8 +10,8 @@ export default class HeroSheetSidebar extends React.Component<Props, State> {
   render() {
     return (
       <div>
-        <ProSidebar collapsed={false}>
-          <Menu iconShape="square">
+        <ProSidebar>
+          <Menu iconShape="circle" popperArrow={true}>
             <MenuItem>
               <Link to="/">Load Hero</Link>
             </MenuItem>

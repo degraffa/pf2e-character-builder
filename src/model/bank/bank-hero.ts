@@ -6,6 +6,7 @@ import HeroAbilities from "../actor/hero/hero-abilities";
 import Skill from "../actor/hero/skill";
 import HeroSkills from "../actor/hero/hero-skills";
 import Item from "../actor/actor-asset/item";
+import Inventory from "../actor/intentory";
 
 export default class HeroBank {
   private static defaultAncestry: Ancestry = {
@@ -90,6 +91,15 @@ export default class HeroBank {
     traits: []
   };
 
+  private static defaultInventory: Inventory = {
+    items: [],
+    equippedArmor: HeroBank.defaultItem,
+    equippedWeapon: HeroBank.defaultItem,
+    gold: 0,
+    silver: 0,
+    copper: 0
+  };
+
   private static defaultHeroData: HeroData = {
     name: "",
     heroClass: HeroBank.defaultHeroClass,
@@ -106,10 +116,7 @@ export default class HeroBank {
     notes: "",
     ac: 0,
     hpMax: 0,
-    hpCurrent: 0,
-    equippedArmor: HeroBank.defaultItem,
-    equippedItem: HeroBank.defaultItem,
-    inventory: []
+    inventory: HeroBank.defaultInventory
   };
 
   public static getDefaultHeroData(): HeroData {
